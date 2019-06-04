@@ -9,10 +9,10 @@ public class SetupLocalPlayer : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            GetComponent<MovePlayer>().enabled = true;
+            GetComponent<PlayerController>().enabled = true;
         } else 
         {
-            GetComponent<MovePlayer>().enabled = false;
+            GetComponent<PlayerController>().enabled = false;
         }
     }
 }
