@@ -11,13 +11,17 @@ public class Damage : MonoBehaviour
     {
         if (other.name == "P1_bar")
         {
+            playerController.TakeDamage();
             Debug.Log("dañop1");
+            transform.position = new Vector3(0.0f, 0.0f, 0.0f);
         } else if (other.name == "P2_bar")
         {
+            playerController.TakeDamage();
             Debug.Log("dañop2");
+            transform.position = new Vector3(0.0f, 0.0f, 0.0f);
         }
 
 
-        transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        
     }
 }

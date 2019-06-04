@@ -59,6 +59,7 @@
      <Compile Include="Assets\Script\ChangeScene.cs" />
      <Compile Include="Assets\Script\MovimientoPelota.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\PlayerID.cs" />
      <Compile Include="Assets\Script\SetupLocalPlayer.cs" />
      <Compile Include="Assets\Script\SingletonColor.cs" />
      <Compile Include="Assets\Script\Win.cs" />

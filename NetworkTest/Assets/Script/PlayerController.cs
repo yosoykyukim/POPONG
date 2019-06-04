@@ -9,7 +9,7 @@ public class PlayerController : NetworkBehaviour
 
     public Text hp;
 
-    public int health = 3;
+    [SyncVar]public int health = 3;
 
     public float speed;
 
@@ -43,13 +43,18 @@ public class PlayerController : NetworkBehaviour
 
     public void TakeDamage()
     {
+        if (!isServer)
+        {
+            return;
+        }
+
         health--;
         if (health == 0)
         {
             //endgame
         }
 
-        hp.text = "HP: " + health.ToString();
+        //hp.text = "HP: " + health.ToString();
 
         Debug.Log("damag");
     }
